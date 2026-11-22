@@ -1,0 +1,23 @@
+:root {
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --text: #1f2330;
+  --muted: #6b7185;
+  --accent: #5b4bd6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161821;
+    --card: #1f2230;
+    --text: #e8eaf2;
+    --muted: #9aa0b4;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
